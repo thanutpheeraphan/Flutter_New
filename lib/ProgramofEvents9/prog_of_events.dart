@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_app2/ProgramofEvents9/news_day1.dart';
 import 'package:flutter_app2/ProgramofEvents9/news_day2.dart';
 import 'package:flutter_app2/ProgramofEvents9/news_day3.dart';
 import 'package:flutter_app2/ScientificProgram1/Day1/day1.dart';
@@ -35,7 +36,7 @@ class prog_of_events extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.white.withAlpha(30),
                 onTap: (){
-//                Navigator.push(context,MaterialPageRoute(builder: (context) => day1()));
+                Navigator.push(context,MaterialPageRoute(builder: (context) => news_day1()));
 
                 },
                child: Container(

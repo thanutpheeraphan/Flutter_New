@@ -3,12 +3,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_plugin_pdf_viewer/flutter_plugin_pdf_viewer.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class news_day3 extends StatefulWidget{
+class news_day1 extends StatefulWidget{
   @override
   State<StatefulWidget> createState() => _MyHomePageState();
 
 }
-class _MyHomePageState extends State<news_day3>{
+class _MyHomePageState extends State<news_day1>{
   bool isLoading = false , isInit = true;
   PDFDocument document;
   @override
@@ -49,12 +49,12 @@ class _MyHomePageState extends State<news_day3>{
                     },
                   )),
                 ),
-
+/*
                 Expanded(
                   child: (MaterialButton(
                     child: Text("Room #2"),
                     onPressed: (){
-                      //loadFromAssets2();
+                      loadFromAssets2();
                     },
                   )),
                 ),
@@ -62,12 +62,12 @@ class _MyHomePageState extends State<news_day3>{
                   child: (MaterialButton(
                     child: Text("Room #3"),
                     onPressed: (){
-                      //loadFromAssets3();
+                      loadFromAssets3();
                     },
                   )),
                 )
 
-
+ */
 
 
               ],
@@ -84,7 +84,7 @@ class _MyHomePageState extends State<news_day3>{
       isInit = false;
       isLoading = true;
     });
-    document = await PDFDocument.fromAsset("assets/acc15_1_27.pdf");
+    document = await PDFDocument.fromAsset("assets/acc15_1_25.pdf");
     setState(() {
       isLoading = false;
     });

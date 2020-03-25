@@ -17,7 +17,7 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
-
+  flutter_pdfview: ^1.0.0+10
   url_launcher: ^5.4.2
   flutter_plugin_pdf_viewer: any
   table_calendar: ^2.2.1
@@ -55,6 +55,7 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
+    - assets/acc15_3_27.pdf
     - assets/acc15_2_27.pdf
     - assets/acc15_1_25.pdf
     - assets/acc15_1_27.pdf

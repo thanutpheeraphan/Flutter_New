@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app2/Authors4/fourth_route_final.dart';
+import 'package:flutter_app2/Exhibition7/prog_comm.dart';
 import 'package:flutter_app2/GeneralInformation8/eighth_route.dart';
 import 'package:flutter_app2/GeneralInformation8/general_info.dart';
 import 'package:flutter_app2/Networking11/eleventh_route.dart';
@@ -14,6 +15,7 @@ import 'package:flutter_app2/ProgramofEvents9/ninth_route.dart';
 import 'package:flutter_app2/Exhibition7/seventh_route.dart';
 import 'package:flutter_app2/Partners10/tenth_route.dart';
 import 'package:flutter_app2/News12/twelve_route.dart';
+import 'package:flutter_app2/ProgramofEvents9/prog_of_events.dart';
 import 'package:flutter_app2/ScientificProgram1/first_route.dart';
 import 'package:flutter_app2/PersonalProgram2/second_route.dart';
 import 'package:flutter_app2/ProgramOverview3/third_route.dart';
@@ -189,7 +191,8 @@ class _HomeState extends State<Home> {
           splashColor: Colors.blue.withAlpha(30),
           onTap: () {
             print('Card 7.');
-            Navigator.push(context,MaterialPageRoute(builder: (context) => seventh_route()));
+//            Navigator.push(context,MaterialPageRoute(builder: (context) => seventh_route()));
+            Navigator.push(context,MaterialPageRoute(builder: (context) => prog_comm()));
           },
           child: Container(
             width: 133,
@@ -231,7 +234,7 @@ class _HomeState extends State<Home> {
           splashColor: Colors.blue.withAlpha(30),
           onTap: () {
             print('Card 9.');
-            Navigator.push(context,MaterialPageRoute(builder: (context) => ninth_route()));
+            Navigator.push(context,MaterialPageRoute(builder: (context) => prog_of_events()));
           },
           child: Container(
             width: 133,

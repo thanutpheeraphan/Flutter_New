@@ -55,12 +55,16 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
+    - assets/acc15_committee.pdf
+    - assets/acc15_1_26.pdf
+    - assets/acc15_2_26.pdf
+    - assets/acc15_3_26.pdf
     - assets/images/video.png
     - assets/images/committee.png
     - assets/further_info.pdf
     - assets/online_conf.pdf
     - assets/welcome_speech.pdf
-    - assets/images/backdrop.jpg
+    - assets/images/backdrop.png
     - assets/news2.pdf
     - assets/news.pdf
     - assets/zoom.pdf

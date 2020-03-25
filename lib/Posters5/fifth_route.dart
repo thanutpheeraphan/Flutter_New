@@ -9,16 +9,7 @@ class fifth_route extends StatelessWidget {
         title: Text("Posters"),
       ),
       body: Center(
-        child: RaisedButton(
-          onPressed: () {
-            // Navigate back to first route when tapped.
-            Navigator.pop(context);
-
-          },
-          child: Column(
-            children: <Widget>[Image.asset('assets/images/backdrop.jpg')],
-          )
-        ),
+        child: Image.asset('assets/images/backdrop.png'),
       ),
     );
   }

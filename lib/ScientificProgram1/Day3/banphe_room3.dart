@@ -18,7 +18,7 @@ class banphe_room3 extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-        title: Text("Banphee Grand Ballroom ",style: GoogleFonts.oswald(fontSize: 16,fontWeight: FontWeight.bold)),
+        title: Text("Banphe Grand Ballroom ",style: GoogleFonts.oswald(fontSize: 16,fontWeight: FontWeight.bold)),
           centerTitle: true,
         backgroundColor:  Colors.black
       ),

@@ -54,7 +54,7 @@ class _MyHomePageState extends State<news_day3>{
                   child: (MaterialButton(
                     child: Text("Room #2"),
                     onPressed: (){
-                      //loadFromAssets2();
+                      loadFromAssets2();
                     },
                   )),
                 ),
@@ -89,13 +89,13 @@ class _MyHomePageState extends State<news_day3>{
       isLoading = false;
     });
   }
-  /*
+
   loadFromAssets2() async {
     setState(() {
       isInit = false;
       isLoading = true;
     });
-    document = await PDFDocument.fromAsset("assets/acc15_2_26.pdf");
+    document = await PDFDocument.fromAsset("assets/acc15_2_27.pdf");
     setState(() {
       isLoading = false;
     });
@@ -111,7 +111,7 @@ class _MyHomePageState extends State<news_day3>{
     });
   }
 
-   */
+
 
 
 

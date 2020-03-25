@@ -241,7 +241,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/nine.png'), Text('Programme of Events',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/nine.png'), Text('ZOOM ID & Password',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),

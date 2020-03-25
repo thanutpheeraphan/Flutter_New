@@ -17,7 +17,7 @@ class prog_of_events extends StatelessWidget {
       //backgroundColor: Color(0xfffffdd0),
       appBar: AppBar(
         centerTitle: true,
-        title: Text("About Session",style: GoogleFonts.notoSans(fontSize: 15),),
+        title: Text("ZOOM ID & Password",style: GoogleFonts.oswald(fontSize: 15),),
         //backgroundColor: Color(0xff0190D6),
       ),
       body: Center(

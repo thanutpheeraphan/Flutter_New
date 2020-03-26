@@ -29,10 +29,12 @@ import 'placeholder_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyApp extends StatelessWidget {
+
   @override
 
   Widget build(BuildContext context) {
     return new MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter GridView',
       home: new Home(),
       theme: new ThemeData(primaryColor: Colors.black),

@@ -15,6 +15,7 @@ class _MyHomePageState extends State<pdf_view>{
   Widget build(BuildContext context) {
 
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("Sponsors",style: GoogleFonts.oswald(fontSize: 16,fontWeight: FontWeight.bold)),

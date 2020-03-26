@@ -15,6 +15,7 @@ class _MyHomePageState extends State<prog_comm>{
   Widget build(BuildContext context) {
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("Program Committee",style: GoogleFonts.oswald(fontSize: 16,fontWeight: FontWeight.bold)),

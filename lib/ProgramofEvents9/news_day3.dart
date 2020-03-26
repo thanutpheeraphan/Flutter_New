@@ -15,6 +15,7 @@ class _MyHomePageState extends State<news_day3>{
   Widget build(BuildContext context) {
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("ZOOM Meeting ID & Password",style: GoogleFonts.oswald(fontSize: 15,fontWeight: FontWeight.bold)),

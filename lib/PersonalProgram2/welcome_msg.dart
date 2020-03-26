@@ -15,6 +15,7 @@ class _MyHomePageState extends State<welcome_msg>{
   Widget build(BuildContext context) {
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("Welcome Message",style: GoogleFonts.oswald(fontSize: 16,fontWeight: FontWeight.bold)),

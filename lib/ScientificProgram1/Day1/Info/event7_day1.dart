@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app2/ScientificProgram1/Day1/day1.dart';
-import 'package:flutter_app2/main_chewie.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 

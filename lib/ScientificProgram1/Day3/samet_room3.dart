@@ -46,9 +46,9 @@ class samet_room3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        08:30 - 11:30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('        08:30 - 11:30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
                             Flexible(
-                              child: Text('     การบรรยายพิเศษผลงานประกวด TCA Concrete Practice Award ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13)),
+                              child: Text('     การบรรยายพิเศษผลงานประกวด TCA Concrete Practice Award ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15)),
                             )
                           ],
                         ),
@@ -80,8 +80,8 @@ class samet_room3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        08.30 - 09.00 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     ENV-001 ผลกระทบของของเถ้าชีวมวลที่ไม่ปรับปรุงคุณภาพต่อสมรรถนะการไหล การเพิ่มขึ้นของอุณหภูมิ และกำลังอัดของคอนกรีตชนิดอัดตัวแน่นได้เอง ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13))],
+                          children: <Widget>[Text('        08.30 - 09.00 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
+                            Text('     ENV-001 ผลกระทบของของเถ้าชีวมวลที่ไม่ปรับปรุงคุณภาพต่อสมรรถนะการไหล การเพิ่มขึ้นของอุณหภูมิ และกำลังอัดของคอนกรีตชนิดอัดตัวแน่นได้เอง ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15))],
                         ),
                       ),
                     ],
@@ -111,8 +111,8 @@ class samet_room3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        09.00 - 09.30 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     ENV-002 ผลิตภัณฑ์คอนกรีตบล็อกประสานปูพื้นผสมเศษขวดพลาสติกสีเหลือทิ้ง ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13))],
+                          children: <Widget>[Text('        09.00 - 09.30 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
+                            Text('     ENV-002 ผลิตภัณฑ์คอนกรีตบล็อกประสานปูพื้นผสมเศษขวดพลาสติกสีเหลือทิ้ง ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15))],
                         ),
                       ),
                     ],
@@ -148,9 +148,9 @@ class samet_room3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        09.00 - 09.30 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('        09.00 - 09.30 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
                             Flexible(
-                              child: Text('     MAT-033 INFLUENCES OF SODIUM HYDROXIDE SOLUTION AND CALCIUM CARBIDE RESIDUE TO FLY ASH RATIOS ON COMPRESSIVE STRENGTH AND ABRASION RESISTANCE OF ALKALI-ACTIVATED MORTAR 		', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13)),
+                              child: Text('     MAT-033 INFLUENCES OF SODIUM HYDROXIDE SOLUTION AND CALCIUM CARBIDE RESIDUE TO FLY ASH RATIOS ON COMPRESSIVE STRENGTH AND ABRASION RESISTANCE OF ALKALI-ACTIVATED MORTAR 		', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15)),
                             )
                             ],
                         ),
@@ -181,9 +181,9 @@ class samet_room3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        09.30 - 10:00 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('        09.30 - 10:00 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
                             Flexible(
-                              child: Text('     MAT-034 Mechanical Properties of High Performance Concrete Using Ground Bottom Ash and Limestone Powder as a Cement Replacement ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13)),
+                              child: Text('     MAT-034 Mechanical Properties of High Performance Concrete Using Ground Bottom Ash and Limestone Powder as a Cement Replacement ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15)),
                             )
                           ],
                         ),
@@ -214,9 +214,9 @@ class samet_room3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        10.00 - 10:30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('        10.00 - 10:30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
                             Flexible(
-                              child: Text('     MAT-036 ผลกระทบของซิลิกาฟูม เถ้าแกลบบด และเถ้าลอย ต่อการพฤติกรรมการก่อตัว กำลังอัด และการเปลี่ยนแปลงอุณหภูมิภายในซีเมนต์เพสต์ ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13)),
+                              child: Text('     MAT-036 ผลกระทบของซิลิกาฟูม เถ้าแกลบบด และเถ้าลอย ต่อการพฤติกรรมการก่อตัว กำลังอัด และการเปลี่ยนแปลงอุณหภูมิภายในซีเมนต์เพสต์ ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15)),
                             )
                           ],
                         ),
@@ -227,6 +227,7 @@ class samet_room3 extends StatelessWidget {
               ),
             ),
             Text('  '),
+            /*
             Container(
               height: 45,
               decoration: BoxDecoration(
@@ -248,9 +249,9 @@ class samet_room3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        10.30 - 11:00',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('        10.30 - 11:00',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
                             Flexible(
-                              child: Text('     MAT-037 INFLUENCE OF BURNISHING PROCESS ON SURFACE HARDNESS AND ABRASION RESISTANCE OF CONCRETE WITH DIFFERENT TYPES OF BINDER ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13)),
+                              child: Text('     MAT-037 INFLUENCE OF BURNISHING PROCESS ON SURFACE HARDNESS AND ABRASION RESISTANCE OF CONCRETE WITH DIFFERENT TYPES OF BINDER ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15)),
                             )
                           ],
                         ),
@@ -261,6 +262,8 @@ class samet_room3 extends StatelessWidget {
               ),
             ),
             Text('  '),
+
+             */
             Container(
               height: 45,
               decoration: BoxDecoration(
@@ -280,9 +283,9 @@ class samet_room3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        11.00 - 11.30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('        11.00 - 11.30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
                             Flexible(
-                              child: Text('     Coffee Break ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13)),
+                              child: Text('     Coffee Break ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15)),
                             )
                           ],
                         ),
@@ -314,8 +317,8 @@ class samet_room3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        12.15 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     ปิดการประชุมวิชาการคอนกรีตประจำปี ครั้งที่ 15 ', overflow: TextOverflow.ellipsis, maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13))],
+                          children: <Widget>[Text('        12.15 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
+                            Text('     ปิดการประชุมวิชาการคอนกรีตประจำปี ครั้งที่ 15 ', overflow: TextOverflow.ellipsis, maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15))],
                         ),
                       ),
                     ],

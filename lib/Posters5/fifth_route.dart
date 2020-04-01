@@ -7,9 +7,11 @@ class fifth_route extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Posters"),
+        centerTitle: true,
       ),
-      body: Center(
-        child: Image.asset('assets/images/backdrop.png'),
+      body: ListView(
+        children: <Widget>[Image.asset('assets/images/poster1.png'),Image.asset('assets/images/poster2.png'),
+          Image.asset('assets/images/news2.png'),Image.asset('assets/images/news3.png')],
       ),
     );
   }

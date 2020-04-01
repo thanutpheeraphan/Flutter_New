@@ -45,9 +45,9 @@ class rayong_grand_hall3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('      08:30 - 11:30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('      08:30 - 11:30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
                             Flexible(
-                              child: Text('     การบรรยายพิเศษผลงานประกวด TCA Concrete Practice Award ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13)),
+                              child: Text('     การบรรยายพิเศษผลงานประกวด TCA Concrete Practice Award ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15)),
                             )
                           ],
                         ),
@@ -79,8 +79,8 @@ class rayong_grand_hall3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('      08:30 - 09:00 TCA Silver Medal',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     การออกแบบส่วนผสมคอนกรีตที่เป็นมิตรต่อสิ่งแวดล้อมของโครงการไฟฟ้าพลังน้ำ ไซยะบุรี ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13))],
+                          children: <Widget>[Text('      08:30 - 09:00 TCA Silver Medal',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
+                            Text('     การออกแบบส่วนผสมคอนกรีตที่เป็นมิตรต่อสิ่งแวดล้อมของโครงการไฟฟ้าพลังน้ำ ไซยะบุรี ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15))],
                         ),
                       ),
                     ],
@@ -111,8 +111,8 @@ class rayong_grand_hall3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('      09:00 - 09:30 TCA Silver Medal',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     “CPAC High Strength Concrete First Concrete Grade 80 MPa Supplied for 				Commercial Building in Thailand” ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13))],
+                          children: <Widget>[Text('      09:00 - 09:30 TCA Silver Medal',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
+                            Text('     “CPAC High Strength Concrete First Concrete Grade 80 MPa Supplied for 				Commercial Building in Thailand” ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15))],
                         ),
                       ),
                     ],
@@ -141,9 +141,9 @@ class rayong_grand_hall3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('      09.30 - 10.00 TCA Concrete Practic Award',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('      09.30 - 10.00 TCA Concrete Practic Award',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
                             Flexible(
-                              child: Text('    “การก่อสร้างระบบพื้นแบบกลวงรับแรงสองทาง (BIAXIAL SLAB) ของอาคารสำนักงาน T-ONE BUILDING” 		', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13)),
+                              child: Text('    “การก่อสร้างระบบพื้นแบบกลวงรับแรงสองทาง (BIAXIAL SLAB) ของอาคารสำนักงาน T-ONE BUILDING” 		', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15)),
                             )
                             ],
                         ),
@@ -174,9 +174,9 @@ class rayong_grand_hall3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('      10.00 - 10:30 TCA Concrete Practic Award',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('      10.00 - 10:30 TCA Concrete Practic Award',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
                             Flexible(
-                              child: Text('     "การก่อสร้างฐานรากด้วยเสาเข็มสปัน (Spun pile) และระบบติดตั้งเสาเข็มเจาะสำเร็จรูป (Double rod auger) โครงการ The Uppergrounds"  ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13)),
+                              child: Text('     "การก่อสร้างฐานรากด้วยเสาเข็มสปัน (Spun pile) และระบบติดตั้งเสาเข็มเจาะสำเร็จรูป (Double rod auger) โครงการ The Uppergrounds"  ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15)),
                             )
                           ],
                         ),
@@ -207,9 +207,9 @@ class rayong_grand_hall3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('      10.30 - 11:00',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('      10.30 - 11:00',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
                             Flexible(
-                              child: Text('     Tremie concrete for very deep foundation and retaining wall ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13)),
+                              child: Text('     Tremie concrete for very deep foundation and retaining wall ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15)),
                             )
                           ],
                         ),
@@ -240,9 +240,9 @@ class rayong_grand_hall3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('      11.30 - 11.45',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('      11.30 - 11.45',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
                             Flexible(
-                              child: Text('     Coffee Break ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13)),
+                              child: Text('     Coffee Break ', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15)),
                             )
                           ],
                         ),
@@ -286,8 +286,8 @@ class rayong_grand_hall3 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('      12.15 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     ปิดการประชุมวิชาการคอนกรีตประจำปี ครั้งที่ 15 ', overflow: TextOverflow.ellipsis, maxLines: 1, style: GoogleFonts.notoSans(fontSize: 13))],
+                          children: <Widget>[Text('      12.15 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 12)),
+                            Text('     ปิดการประชุมวิชาการคอนกรีตประจำปี ครั้งที่ 15 ', overflow: TextOverflow.ellipsis, maxLines: 1, style: GoogleFonts.notoSans(fontSize: 15))],
                         ),
                       ),
                     ],

@@ -51,8 +51,8 @@ class rayong_grand_hall1 extends StatelessWidget {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[Text('         10:30 - 13:00',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                          Text('     Registration',  style: GoogleFonts.oswald(fontSize: 14))],
+                        children: <Widget>[Text('         10:30 - 13:00',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 13)),
+                          Text('     Registration',  style: GoogleFonts.oswald(fontSize: 15))],
                       ),
                     ),
                     ],
@@ -86,8 +86,8 @@ class rayong_grand_hall1 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        13:00 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     Welcome Speech',  style: GoogleFonts.oswald (fontSize: 14))],
+                          children: <Widget>[Text('        13:00 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 13)),
+                            Text('     Welcome Speech',  style: GoogleFonts.oswald (fontSize: 15))],
                         ),
                       ),
                     ],
@@ -122,8 +122,8 @@ class rayong_grand_hall1 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     TCA Concrete Practice Award (Opening ACC15)', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 14))],
+                          children: <Widget>[Text('        ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 13)),
+                            Text('     TCA Concrete Practice Award (Opening ACC15)', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 15))],
                         ),
                       ),
                     ],
@@ -158,8 +158,8 @@ class rayong_grand_hall1 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('                   - 13:30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     พิธีเปิดการประชุมและกล่าวขอบคุณผู้สนับสนุน', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 14))],
+                          children: <Widget>[Text('                   - 13:30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 13)),
+                            Text('     พิธีเปิดการประชุมและกล่าวขอบคุณผู้สนับสนุน', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 15))],
                         ),
                       ),
                     ],
@@ -192,8 +192,8 @@ class rayong_grand_hall1 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        13:45 -  ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     การบรรยายพิเศษ (Keynote Speaker) ห้องที่ 1 (Rayong Grand Ballroom” ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 14))],
+                          children: <Widget>[Text('        13:45 -  ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 13)),
+                            Text('     การบรรยายพิเศษ (Keynote Speaker) ห้องที่ 1 (Rayong Grand Ballroom” ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 15))],
                         ),
                       ),
                     ],
@@ -226,8 +226,8 @@ class rayong_grand_hall1 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        13:45 - 14:45',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     Special Lecture on “Development of Concrete Technology for Eastern Economic Corridor” ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 14))],
+                          children: <Widget>[Text('        13:45 - 14:45',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 13)),
+                            Text('     Special Lecture on “Development of Concrete Technology for Eastern Economic Corridor” ',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 15))],
                         ),
                       ),
                     ],
@@ -258,9 +258,9 @@ class rayong_grand_hall1 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        14:45 - 15:45 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('        14:45 - 15:45 ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 13)),
                             Flexible(
-                              child: Text('     TCA Concrete Practice Awards (Opening ACC15)', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 14)),
+                              child: Text('     TCA Concrete Practice Awards (Opening ACC15)', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 15)),
                             )
                           ],
                         ),
@@ -290,8 +290,8 @@ class rayong_grand_hall1 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        15:45 - 16:00',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     Coffee break',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 14))],
+                          children: <Widget>[Text('        15:45 - 16:00',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 13)),
+                            Text('     Coffee break',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 15))],
                         ),
                       ),
                     ],
@@ -321,9 +321,9 @@ class rayong_grand_hall1 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        16:00 - 16:30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('        16:00 - 16:30',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 13)),
                             Flexible(
-                              child: Text('     บทความรับเชิญ เรื่อง “บริบทคอนกรีตกับงานก่อสร้าง ภายใต้สมาคมซีเมนต์และคอนกรีตโลก (Global Concrete and Cement Association, GCCA)”', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 14)),
+                              child: Text('     บทความรับเชิญ เรื่อง “บริบทคอนกรีตกับงานก่อสร้าง ภายใต้สมาคมซีเมนต์และคอนกรีตโลก (Global Concrete and Cement Association, GCCA)”', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 15)),
                             )
                             ],
                         ),
@@ -354,8 +354,8 @@ class rayong_grand_hall1 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        16:30 - 17:00',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
-                            Text('     16th International Congress on the Chemistry of Cement, ICCC 2023 in Bangkok Thailand',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 14))],
+                          children: <Widget>[Text('        16:30 - 17:00',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 13)),
+                            Text('     16th International Congress on the Chemistry of Cement, ICCC 2023 in Bangkok Thailand',  overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 15))],
                         ),
                       ),
                     ],
@@ -384,9 +384,9 @@ class rayong_grand_hall1 extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[Text('        17:00 - ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 10)),
+                          children: <Widget>[Text('        17:00 - ',  style: TextStyle(fontStyle: FontStyle.italic,fontSize: 13)),
                             Flexible(
-                              child: Text('     Introducing the host of ACC16 , Srinakharinwirot University', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 14)),
+                              child: Text('     Introducing the host of ACC16 , Srinakharinwirot University', overflow: TextOverflow.ellipsis , maxLines: 1, style: GoogleFonts.oswald(fontSize: 15)),
                             )
                           ],
                         ),

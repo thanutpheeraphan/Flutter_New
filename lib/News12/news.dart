@@ -66,6 +66,14 @@ class _MyHomePageState extends State<news>{
                       loadFromAssets3();
                     },
                   )),
+                ),
+                Expanded(
+                  child: (MaterialButton(
+                    child: Text(" News 4"),
+                    onPressed: (){
+                      loadFromAssets4();
+                    },
+                  )),
                 )
 
 
@@ -104,6 +112,16 @@ class _MyHomePageState extends State<news>{
       isLoading = true;
     });
     document = await PDFDocument.fromAsset("assets/further_info.pdf");
+    setState(() {
+      isLoading = false;
+    });
+  }
+  loadFromAssets4() async {
+    setState(() {
+      isInit = false;
+      isLoading = true;
+    });
+    document = await PDFDocument.fromAsset("assets/combine.pdf");
     setState(() {
       isLoading = false;
     });

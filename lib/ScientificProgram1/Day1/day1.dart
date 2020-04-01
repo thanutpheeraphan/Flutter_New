@@ -35,7 +35,7 @@ class day1 extends StatelessWidget {
                 child: Container(
                   child: Row(
 
-                    children: <Widget>[Text('       '),Image.asset('assets/images/arrow.png'), Text('     Room #1 (Rayong Grand Ballroom)',  style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)],
+                    children: <Widget>[Text('       '),Image.asset('assets/images/arrow.png'), Text('     Room #1 (Rayong Grand Ballroom)',  style: GoogleFonts.oswald(fontSize: 16,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)],
                   ),
                 ),
               ),

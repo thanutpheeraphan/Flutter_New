@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/one_2.png'), Text('Programme    Details',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/one_2.png'), Text('Programme Details',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -90,7 +90,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/two.png'), Text('Welcome     Message',  style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/two.png'), Text('Welcome Message',  style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -111,7 +111,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/three.png'), Text('Programme Overview',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/three.png'), Text('Programme Overview',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -136,7 +136,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/four.png'), Text('Authors',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/four.png'), Text('Authors',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -157,7 +157,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/five.png'), Text('Posters',  style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/five.png'), Text('Posters',  style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -179,7 +179,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/six.png'), Text('ZOOM Manual',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/six.png'), Text('ZOOM Manual',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -201,7 +201,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/seven.png'), Text('Program Committee',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/seven.png'), Text('Program Committee',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -222,7 +222,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/eight.png'), Text('Brochure Information',  style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/eight.png'), Text('Brochure Information',  style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -243,7 +243,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/nine.png'), Text('ZOOM ID & Password',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/nine.png'), Text('ZOOM ID & Password',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -265,7 +265,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/ten.png'), Text('Sponsors',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/ten.png'), Text('Sponsors',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -286,7 +286,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[ Image.asset('assets/images/eleven.png'), Text('Host and Co-Host',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[ Image.asset('assets/images/eleven.png'), Text('Host and Co-Host',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -307,7 +307,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/twelve.png'), Text('News',  style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/twelve.png'), Text('News',  style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),

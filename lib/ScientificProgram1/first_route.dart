@@ -14,7 +14,7 @@ class first_route extends StatelessWidget {
       //backgroundColor: Color(0xfffffdd0),
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Progamme Details",style: GoogleFonts.notoSans(fontSize: 15),),
+        title: Text("Progamme Details",),
         //backgroundColor: Color(0xff0190D6),
       ),
       body: Center(

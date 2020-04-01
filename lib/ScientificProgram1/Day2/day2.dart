@@ -37,7 +37,7 @@ class day2 extends StatelessWidget {
                 child: Container(
                   child: Row(
 
-                    children: <Widget>[Text('       '),Image.asset('assets/images/arrow.png'), Text('     Room #1 (Rayong Grand Ballroom)',  style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)],
+                    children: <Widget>[Text('       '),Image.asset('assets/images/arrow.png'), Text('     Room #1 (Rayong Grand Ballroom)',  style: GoogleFonts.oswald(fontSize: 15,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)],
                   ),
                 ),
               ),
@@ -56,7 +56,7 @@ class day2 extends StatelessWidget {
                 },
                 child: Container(
                   child: Row(
-                    children: <Widget>[Text('       '),Image.asset('assets/images/arrow.png'), Text('      Room #2 (Banphe Grand Ballroom)',  style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)],
+                    children: <Widget>[Text('       '),Image.asset('assets/images/arrow.png'), Text('      Room #2 (Banphe Grand Ballroom)',  style: GoogleFonts.oswald(fontSize: 15,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)],
                   ),
                 ),
               ),
@@ -77,7 +77,7 @@ class day2 extends StatelessWidget {
                 },
                 child: Container(
                   child: Row(
-                    children: <Widget>[Text('       '),Image.asset('assets/images/arrow.png'), Text('     Room #3 (Samet Room) ',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)],
+                    children: <Widget>[Text('       '),Image.asset('assets/images/arrow.png'), Text('     Room #3 (Samet Room) ',   style: GoogleFonts.oswald(fontSize: 15,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)],
                   ),
                 ),
               ),

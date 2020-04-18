@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/one_2.png'), Text('Programme Details',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/one_2.png'), Text('Program Details',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -111,7 +111,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/three.png'), Text('Programme Overview',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/three.png'), Text('Program Overview',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -201,7 +201,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/seven.png'), Text('Program Committee',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/seven.png'), Text('Program Committee',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -222,7 +222,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/eight.png'), Text('Brochure Information',  style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/eight.png'), Text('Brochure Information',  style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -243,7 +243,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[Image.asset('assets/images/nine.png'), Text('ZOOM ID & Password',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[Image.asset('assets/images/nine.png'), Text('ZOOM ID & Password',   style: GoogleFonts.oswald(fontSize: 12,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -286,7 +286,7 @@ class _HomeState extends State<Home> {
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[ Image.asset('assets/images/eleven.png'), Text('Host and Co-Host',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
+              children: <Widget>[ Image.asset('assets/images/eleven.png'), Text('Proceeding',   style: GoogleFonts.oswald(fontSize: 13,fontWeight: FontWeight.bold),textAlign: TextAlign.center,)], //,color: Color(0xffFCCA3C)
             ),
           ),
         ),
@@ -330,8 +330,14 @@ class _HomeState extends State<Home> {
     return new Container(
       color: Color(0xff0190D6), //official color from poster color: Color(0xff0190D6)
       child: new Column(
+
         mainAxisAlignment: MainAxisAlignment.spaceAround,
-       children: <Widget>[Image.asset('assets/images/homescreen.png'), Flexible(child:newGridView2)],
+       children: <Widget>[
+         Padding(padding: EdgeInsets.only(top: 10.0,bottom: 0.0),
+           child: Image.asset('assets/images/homescreen.png'),
+         ),
+
+          Flexible(child:newGridView2)],
       ),
     );
 
@@ -339,7 +345,9 @@ class _HomeState extends State<Home> {
 
 }
 void main() {
-
+//Image.asset('assets/images/homescreen.png')
+//EdgeInsets.all(8.0)
+//Flexible(child:newGridView2)
   runApp(new MyApp());
 
 

@@ -51,6 +51,8 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     var newCard1 = new Center( //has big size
       child: Card(
         elevation: 10.0,
@@ -315,6 +317,8 @@ class _HomeState extends State<Home> {
     );
 
 
+    var paddingScreen = MediaQuery.of(context).padding;
+    double newHeight = height - paddingScreen.top - paddingScreen.bottom;
     var newGridView2 = new GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
 
@@ -328,16 +332,17 @@ class _HomeState extends State<Home> {
         children: <Widget>[newCard1,newCard2,newCard3,newCard4,newCard5,newCard6,newCard7,newCard8,newCard9,newCard10,newCard11,newCard12]);
 
     return new Container(
+      padding: paddingScreen,
+      height:newHeight,
+      width: (MediaQuery.of(context).size.width),
       color: Color(0xff0190D6), //official color from poster color: Color(0xff0190D6)
+
       child: new Column(
 
         mainAxisAlignment: MainAxisAlignment.spaceAround,
        children: <Widget>[
-         Padding(padding: EdgeInsets.only(top: 10.0,bottom: 0.0),
-           child: Image.asset('assets/images/homescreen.png'),
-         ),
-
-          Flexible(child:newGridView2)],
+         Image.asset('assets/images/homescreen.png'),
+         Flexible(child:newGridView2)],
       ),
     );
 

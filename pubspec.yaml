@@ -21,7 +21,6 @@ dependencies:
   url_launcher: ^5.4.2
   flutter_plugin_pdf_viewer: any
   table_calendar: ^2.2.1
-  syncfusion_flutter_calendar: ^17.4.40-beta
   calendar_strip: ^1.0.4
   assorted_layout_widgets: ^1.0.14
   google_fonts: ^0.3.2

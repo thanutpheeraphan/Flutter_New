@@ -8,10 +8,14 @@ class acc16Day1Session extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width * 0.8;
-    Future<void> _showMyDialog(String time, String name, String author) async {
+    Future<void> _showMyDialog(
+        String time, String name, String author, String image) async {
+      // if (image == '') {
+      //   image = 'assets/images/photos/person.png';  //removed all placeholders
+      // }
       return showDialog<void>(
         context: context,
-        barrierDismissible: false, // user must tap button!
+        barrierDismissible: true, // user must tap button! use false
         builder: (BuildContext context) {
           return AlertDialog(
             title: Align(
@@ -28,53 +32,14 @@ class acc16Day1Session extends StatelessWidget {
                   Text(author,
                       style:
                           TextStyle(fontSize: 13, fontStyle: FontStyle.italic)),
-                ],
-              ),
-            ),
-            actions: <Widget>[
-              TextButton(
-                child: Text('OK'),
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-              ),
-            ],
-          );
-        },
-      );
-    }
-
-    Future<void> _showMyDialog2(
-      String time,
-      String name,
-      String author,
-      String name2,
-      String author2,
-    ) async {
-      return showDialog<void>(
-        context: context,
-        barrierDismissible: false, // user must tap button!
-        builder: (BuildContext context) {
-          return AlertDialog(
-            title: Align(
-              alignment: Alignment.center,
-              child: Text(time),
-            ),
-            content: SingleChildScrollView(
-              child: ListBody(
-                children: <Widget>[
-                  Text(name,
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
-                  Text(author,
-                      style:
-                          TextStyle(fontSize: 13, fontStyle: FontStyle.italic)),
-                  Text(name2,
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
-                  Text(author2,
-                      style:
-                          TextStyle(fontSize: 13, fontStyle: FontStyle.italic)),
+                  Text(" "),
+                  ClipOval(
+                    child: Image.asset(
+                      image,
+                      // height: 50,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -109,7 +74,7 @@ class acc16Day1Session extends StatelessWidget {
               textAlign: TextAlign.start,
             ),
             Container(
-              height: 125,
+              height: 85,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(8.0)),
                   color: Color(0xfffff6c3)),
@@ -117,12 +82,11 @@ class acc16Day1Session extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.white.withAlpha(30),
                 onTap: () {
-                  _showMyDialog2(
-                      '09:00 - 09:30',
+                  _showMyDialog(
+                      '09:00 - 09:15',
                       'กล่าวต้อนรับผู้เข้าร่วมการประชุมและกล่าวขอบคุณผู้สนับสนุนการจัดการประชุม',
                       "โดย นายกสมาคมคอนกรีตแห่งประเทศไทย",
-                      'พิธีเปิดการประชุมและกล่าวขอบคุณผู้สนับสนุน ',
-                      "โดย คณบดีคณะวิศวกรรมศาสตร์ มหาวิทยาลัยศรีนครินทรวิโรฒ องครักษ์");
+                      'assets/images/photos/Thanakorn.png');
                 },
                 child: Container(
                   child: Row(
@@ -135,7 +99,7 @@ class acc16Day1Session extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start, //
                           children: <Widget>[
-                            Text('         09:00 - 09:30',
+                            Text('         09:00 - 09:15',
                                 style: TextStyle(
                                     fontStyle: FontStyle.italic, fontSize: 13)),
                             Text(
@@ -148,6 +112,44 @@ class acc16Day1Session extends StatelessWidget {
                                 maxLines: 1,
                                 style: GoogleFonts.oswald(
                                     fontSize: 15, fontStyle: FontStyle.italic)),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Text('  '),
+            Container(
+              height: 85,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  color: Color(0xfffff6c3)),
+              //color: Color(0xffCEEEF5 ),
+              child: InkWell(
+                splashColor: Colors.white.withAlpha(30),
+                onTap: () {
+                  _showMyDialog(
+                      '09:15 - 09:30',
+                      'พิธีเปิดการประชุมและกล่าวขอบคุณผู้สนับสนุน ',
+                      "โดย คณบดีคณะวิศวกรรมศาสตร์ มหาวิทยาลัยศรีนครินทรวิโรฒ องครักษ์",
+                      'assets/images/photos/DeanEngrSWU.png');
+                },
+                child: Container(
+                  child: Row(
+                    children: <Widget>[
+                      Text('       '),
+                      Image.asset('assets/images/info3.png'),
+                      Container(
+                        width: c_width,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start, //
+                          children: <Widget>[
+                            Text('         09:15 - 09:30',
+                                style: TextStyle(
+                                    fontStyle: FontStyle.italic, fontSize: 13)),
                             Text(
                                 '     พิธีเปิดการประชุมและกล่าวขอบคุณผู้สนับสนุน ',
                                 overflow: TextOverflow.ellipsis,
@@ -180,7 +182,8 @@ class acc16Day1Session extends StatelessWidget {
                   _showMyDialog(
                       '09:45',
                       ' การบรรยายพิเศษ (Keynote Speaker) Development of Infrastructures for Structural Performance Enhancement and Environmental Friendliness:   ',
-                      'Part 1');
+                      'Part 1',
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -226,8 +229,11 @@ class acc16Day1Session extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.white.withAlpha(30),
                 onTap: () {
-                  _showMyDialog('09:45 - 10:15', 'ICCC 1',
-                      'By Prof. Karen Scrivener, International Congress on the Chemistry of Cement');
+                  _showMyDialog(
+                      '09:45 - 10:15',
+                      'ICCC 1',
+                      'By Prof. Karen Scrivener, International Congress on the Chemistry of Cement',
+                      'assets/images/photos/Karen.jpg');
                 },
                 child: Container(
                   child: Row(
@@ -270,8 +276,11 @@ class acc16Day1Session extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.white.withAlpha(30),
                 onTap: () {
-                  _showMyDialog('10:15 - 10:45', ' ACI Ambassador',
-                      'By Mr. G. Terry Harris, American Concrete Institute (ACI)');
+                  _showMyDialog(
+                      '10:15 - 10:45',
+                      ' ACI Ambassador',
+                      'By Mr. G. Terry Harris, American Concrete Institute (ACI)',
+                      'assets/images/photos/Harris.png');
                 },
                 child: Container(
                   child: Row(
@@ -317,7 +326,8 @@ class acc16Day1Session extends StatelessWidget {
                   _showMyDialog(
                       '10:45 - 11:15',
                       'Sustainability and the ACI Building Code: Plans for the 2025 Edition of ACI318',
-                      'By Dr. Andrew W. Taylor, American Concrete Institute (ACI)');
+                      'By Dr. Andrew W. Taylor, American Concrete Institute (ACI)',
+                      'assets/images/photos/Taylor.png');
                 },
                 child: Container(
                   child: Row(
@@ -365,8 +375,11 @@ class acc16Day1Session extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.white.withAlpha(30),
                 onTap: () {
-                  _showMyDialog('11:15 - 11:45', 'High levels of replacement',
-                      'By Mr. Kevin MacDonald, American Concrete Institute (ACI) ');
+                  _showMyDialog(
+                      '11:15 - 11:45',
+                      'High levels of replacement',
+                      'By Mr. Kevin MacDonald, American Concrete Institute (ACI) ',
+                      'assets/images/photos/Kevin.png');
                 },
                 child: Container(
                   child: Row(
@@ -479,18 +492,19 @@ class acc16Day1Session extends StatelessWidget {
             ),
             Text('  '),
             Container(
-              height: 125,
+              height: 65,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                  color: Color(0xfffff6c3)),
+                  color: Colors.redAccent),
               //color: Color(0xffCEEEF5 ),
               child: InkWell(
                 splashColor: Colors.white.withAlpha(30),
                 onTap: () {
                   _showMyDialog(
                       '13:00 - 14:00',
-                      'นําเสนอผลงาน TCA Concrete Practice Awards (Gold Medal) โครงการ The Commuter Train System (Red Line) Project Bang Sue-Rangsit Section: Contract 1',
-                      'โดย Unique Engineering and Construction PCL');
+                      'นําเสนอผลงาน TCA Concrete Practice Awards (Gold Medal) ',
+                      ' ',
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -511,6 +525,44 @@ class acc16Day1Session extends StatelessWidget {
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 1,
                                 style: GoogleFonts.oswald(fontSize: 15)),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Text('  '),
+            Container(
+              height: 125,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  color: Color(0xfffff6c3)),
+              //color: Color(0xffCEEEF5 ),
+              child: InkWell(
+                splashColor: Colors.white.withAlpha(30),
+                onTap: () {
+                  _showMyDialog(
+                      '13:00 - 14:00',
+                      'โครงการ The Commuter Train System (Red Line) Project Bang Sue-Rangsit Section: Contract 1',
+                      'โดย Unique Engineering and Construction PCL',
+                      '');
+                },
+                child: Container(
+                  child: Row(
+                    children: <Widget>[
+                      Text('       '),
+                      Image.asset('assets/images/info3.png'),
+                      Container(
+                        width: c_width,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text('        13:00 - 14:00',
+                                style: TextStyle(
+                                    fontStyle: FontStyle.italic, fontSize: 13)),
                             Text(
                                 '     โครงการ The Commuter Train System (Red Line) Project Bang Sue-Rangsit',
                                 overflow: TextOverflow.ellipsis,
@@ -535,6 +587,56 @@ class acc16Day1Session extends StatelessWidget {
             ),
             Text('  '),
             Container(
+              height: 105,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  // color: Color(0xfffff6c3)),
+                  color: Colors.redAccent),
+              child: InkWell(
+                splashColor: Colors.white.withAlpha(30),
+                onTap: () {
+                  _showMyDialog(
+                      '13:00 - 14:00',
+                      ' การบรรยายพิเศษ (Keynote Speaker) Development of Infrastructures for Structural Performance Enhancement and Environmental Friendliness:   ',
+                      'Part 2',
+                      '');
+                },
+                child: Container(
+                  child: Row(
+                    children: <Widget>[
+                      Text('       '),
+                      Image.asset('assets/images/info3.png'),
+                      Container(
+                        width: c_width,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text('        13:00 - 14:00',
+                                style: TextStyle(
+                                    fontStyle: FontStyle.italic, fontSize: 13)),
+                            Text('     การบรรยายพิเศษ (Keynote Speaker)',
+                                style: GoogleFonts.oswald(fontSize: 15)),
+                            Text(
+                                '     Development of Infrastructures for Structural Performance ',
+                                overflow: TextOverflow.ellipsis,
+                                maxLines: 1,
+                                style: GoogleFonts.oswald(fontSize: 15)),
+                            Text(
+                                '     Enhancement and Environmental Friendliness: Part 2',
+                                overflow: TextOverflow.ellipsis,
+                                maxLines: 1,
+                                style: GoogleFonts.oswald(fontSize: 15)),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Text('  '),
+            Container(
               height: 85,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(8.0)),
@@ -546,7 +648,8 @@ class acc16Day1Session extends StatelessWidget {
                   _showMyDialog(
                       '14:00 - 14:30',
                       'Reactivity tests for supplementary cementitious materials',
-                      'By Asst. Prof. Prannoy Suraneni, American Concrete Institute (ACI)');
+                      'By Asst. Prof. Prannoy Suraneni, American Concrete Institute (ACI)',
+                      'assets/images/photos/Prannoy.png');
                 },
                 child: Container(
                   child: Row(
@@ -594,7 +697,8 @@ class acc16Day1Session extends StatelessWidget {
                   _showMyDialog(
                       '14:30 - 15:00',
                       'Load and resistance factors for concrete bridges.',
-                      'By Prof. Andrzej S. Nowak, American Concrete Institute (ACI)');
+                      'By Prof. Andrzej S. Nowak, American Concrete Institute (ACI)',
+                      'assets/images/photos/Nowak.png');
                 },
                 child: Container(
                   child: Row(
@@ -641,7 +745,8 @@ class acc16Day1Session extends StatelessWidget {
                   _showMyDialog(
                       '15:00 เป็นต้นไป',
                       '“Challenges of Mortar and Construction Materials to Develop Infrastructures in Thailand”',
-                      'Special Topic from Mortar Group ');
+                      'Special Topic from Mortar Group ',
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -688,8 +793,11 @@ class acc16Day1Session extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.white.withAlpha(30),
                 onTap: () {
-                  _showMyDialog('15:00 - 15:20', 'มาตรฐานของคอนกรีตทางทะเล',
-                      'By คุณจุฑารัตน์ ทรัพย์ปฐวี, บริษัท ยูบาว(ประเทศไทย) จำกัด');
+                  _showMyDialog(
+                      '15:00 - 15:20',
+                      'มาตรฐานของคอนกรีตทางทะเล',
+                      'By คุณจุฑารัตน์ ทรัพย์ปฐวี, บริษัท ยูบาว(ประเทศไทย) จำกัด',
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -733,7 +841,7 @@ class acc16Day1Session extends StatelessWidget {
                 splashColor: Colors.white.withAlpha(30),
                 onTap: () {
                   _showMyDialog('15:20 - 15:40', 'Waterproofing Shotcrete',
-                      'By Mr.Iljoon Choi, WACKER CHEMICALS');
+                      'By Mr.Iljoon Choi, WACKER CHEMICALS', '');
                 },
                 child: Container(
                   child: Row(
@@ -778,7 +886,8 @@ class acc16Day1Session extends StatelessWidget {
                   _showMyDialog(
                       '15:40 - 16:00',
                       'The First On-site 3D Printing SCG Co-working space in Thailand',
-                      'By คุณเฉลิมวุฒิ สงวนญาติ, บริษัท เอสซีจี ซิเมนต์ จำกัด');
+                      'By คุณเฉลิมวุฒิ สงวนญาติ, บริษัท เอสซีจี ซิเมนต์ จำกัด',
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -825,7 +934,8 @@ class acc16Day1Session extends StatelessWidget {
                   _showMyDialog(
                       '16:00 - 16:20',
                       'Wall & Floor solutions for sustainable construction',
-                      'By Dr.Yothin Ungkoon /Mr.Sirirot Phimankam, บริษัท ปูนซีเมนต์นครหลวง จำกัด(มหาชน)');
+                      'By Dr.Yothin Ungkoon /Mr.Sirirot Phimankam, บริษัท ปูนซีเมนต์นครหลวง จำกัด(มหาชน)',
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -872,7 +982,8 @@ class acc16Day1Session extends StatelessWidget {
                   _showMyDialog(
                       '16:20 - 16:40',
                       'วัสดุติดยึดและซ่อมแซม ชิ้นส่วนโครงสร้างคอนกรีต (Concrete Segmental -  Adhesive and Repair)',
-                      'By คุณสุวิชา พารักษา, บริษัท ซิก้า (ประเทศไทย) จำกัด)');
+                      'By คุณสุวิชา พารักษา, บริษัท ซิก้า (ประเทศไทย) จำกัด)',
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -923,7 +1034,8 @@ class acc16Day1Session extends StatelessWidget {
                   _showMyDialog(
                       '16:40 - 17:00',
                       'นวัตกรรมซ่อมผิวพื้นคอนกรีตที่เป็นมิตรต่อสิ่งแวดล้อม',
-                      'By คุณธิติ ศรีรัตนา, บริษัท จระเข้คอร์ปอเรชั่น จำกัด');
+                      'By คุณธิติ ศรีรัตนา, บริษัท จระเข้คอร์ปอเรชั่น จำกัด',
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -970,7 +1082,8 @@ class acc16Day1Session extends StatelessWidget {
                   _showMyDialog(
                       '17:00 - 17:20',
                       '3D MORTAR PRINTED HOUSE IN BECKUM,GERMANY - CASE STUDY , TECHNOLOGY REVIEW AND OUTLOOK',
-                      'By Mr.Ferdinand Leopolder, South East Asia Drymix Mortar Association(SEADMA)');
+                      'By Mr.Ferdinand Leopolder, South East Asia Drymix Mortar Association(SEADMA)',
+                      'assets/images/photos/Ferdinand.png');
                 },
                 child: Container(
                   child: Row(

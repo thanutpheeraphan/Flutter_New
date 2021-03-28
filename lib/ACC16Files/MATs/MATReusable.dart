@@ -49,6 +49,7 @@ class MATReusable extends StatelessWidget {
           backgroundColor: Color(0xffA6A6A6),
         ),
         floatingActionButton: FloatingActionButton(
+          backgroundColor: Color(0xffA6A6A6),
           onPressed: () {
             _launchInBrowser(_launchURL);
           },
@@ -57,8 +58,8 @@ class MATReusable extends StatelessWidget {
         ),
         body: new Container(
           padding: const EdgeInsets.all(8),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: ListView(
+            // crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Align(
                 child: Text(

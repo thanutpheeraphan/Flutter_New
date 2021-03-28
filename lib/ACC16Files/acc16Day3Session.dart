@@ -8,10 +8,11 @@ class acc16Day3Session extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width * 0.8;
-    Future<void> _showMyDialog(String time, String name, String author) async {
+    Future<void> _showMyDialog(
+        String time, String name, String author, String image) async {
       return showDialog<void>(
         context: context,
-        barrierDismissible: false, // user must tap button!
+        barrierDismissible: true, // user must tap button! use false
         builder: (BuildContext context) {
           return AlertDialog(
             title: Align(
@@ -28,6 +29,14 @@ class acc16Day3Session extends StatelessWidget {
                   Text(author,
                       style:
                           TextStyle(fontSize: 13, fontStyle: FontStyle.italic)),
+                  Text(" "),
+                  ClipOval(
+                    child: Image.asset(
+                      image,
+                      // height: 50,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -74,6 +83,7 @@ class acc16Day3Session extends StatelessWidget {
                   _showMyDialog(
                       '09:00 เป็นต้นไป',
                       'Special Topic: International Conference Challenges of Concrete and Construction Materials to Develop Infrastructures in Asia-Pacific ',
+                      '',
                       '');
                 },
                 child: Container(
@@ -126,7 +136,8 @@ class acc16Day3Session extends StatelessWidget {
                   _showMyDialog(
                       '09:00 - 09:30',
                       'Fatigue damage and life time prediction of concrete bridge deck slabs',
-                      'By Prof. Yasuhiko Sato, Waseda University');
+                      'By Prof. Yasuhiko Sato, Waseda University',
+                      'assets/images/photos/Sato.png');
                 },
                 child: Container(
                   child: Row(
@@ -173,7 +184,8 @@ class acc16Day3Session extends StatelessWidget {
                   _showMyDialog(
                       '09:30 - 10:00',
                       'Hot issues in concrete aggregates',
-                      'By Prof. Dr. Suvimol Sujjavanich, Kasetsart University');
+                      'By Prof. Dr. Suvimol Sujjavanich, Kasetsart University',
+                      'assets/images/photos/Suvimol.png');
                 },
                 child: Container(
                   child: Row(
@@ -219,7 +231,8 @@ class acc16Day3Session extends StatelessWidget {
                   _showMyDialog(
                       '10:00 - 10:30',
                       'Structural performance assessment by digital twin approach',
-                      'By Ing. Radomir Pukl, Cervenka Consulting, Czech Republic');
+                      'By Ing. Radomir Pukl, Cervenka Consulting, Czech Republic',
+                      'assets/images/photos/Radomir.png');
                 },
                 child: Container(
                   child: Row(
@@ -266,7 +279,8 @@ class acc16Day3Session extends StatelessWidget {
                   _showMyDialog(
                       "10:30 - 11:00",
                       'คอนกรีตขยายตัวสําหรับแก้ปัญหาการแตกร้ําวจากการหดตัว',
-                      'By Prof. Dr. Somnuk Tangtermsirikul, Thammasat University');
+                      'By Prof. Dr. Somnuk Tangtermsirikul, Thammasat University',
+                      'assets/images/photos/Somnuk.png');
                 },
                 child: Container(
                   child: Row(
@@ -313,7 +327,8 @@ class acc16Day3Session extends StatelessWidget {
                   _showMyDialog(
                       '11:00 - 11:30',
                       '“HYDRAULIC CEMENT”: Environmentally Friendly Cement for a Sustainable Construction',
-                      'By Thai Cement Manufacturers Association (TCMA) ');
+                      'By Thai Cement Manufacturers Association (TCMA) ',
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -397,8 +412,11 @@ class acc16Day3Session extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.white.withAlpha(30),
                 onTap: () {
-                  _showMyDialog('13:30 - 14:30', "ICCC2",
-                      'By Prof. Caijun Shi, International Congress on the Chemistry of Cement');
+                  _showMyDialog(
+                      '13:30 - 14:30',
+                      "ICCC2",
+                      'By Prof. Caijun Shi, International Congress on the Chemistry of Cement',
+                      'assets/images/photos/Shi.png');
                 },
                 child: Container(
                   child: Row(

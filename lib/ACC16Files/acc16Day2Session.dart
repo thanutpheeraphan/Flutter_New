@@ -8,10 +8,11 @@ class acc16Day2Session extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width * 0.8;
-    Future<void> _showMyDialog(String time, String name, String author) async {
+    Future<void> _showMyDialog(
+        String time, String name, String author, String image) async {
       return showDialog<void>(
         context: context,
-        barrierDismissible: false, // user must tap button!
+        barrierDismissible: true, // user must tap button! use false
         builder: (BuildContext context) {
           return AlertDialog(
             title: Align(
@@ -28,6 +29,14 @@ class acc16Day2Session extends StatelessWidget {
                   Text(author,
                       style:
                           TextStyle(fontSize: 13, fontStyle: FontStyle.italic)),
+                  Text(" "),
+                  ClipOval(
+                    child: Image.asset(
+                      image,
+                      // height: 50,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -74,7 +83,8 @@ class acc16Day2Session extends StatelessWidget {
                   _showMyDialog(
                       "09:00 เป็นต้นไป",
                       "Special Topic: International Conference Development of Infrastructures for Structural Performance Enhancement and Environmental Friendliness: Part 2",
-                      "");
+                      "",
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -127,7 +137,8 @@ class acc16Day2Session extends StatelessWidget {
                   _showMyDialog(
                       "09:00 - 09:30",
                       '3D Printed Concrete: Research, Challenges and Future Opportunities',
-                      'By Prof. Mahmoud Reda Taha, American Concrete Institute (ACI) ');
+                      'By Prof. Mahmoud Reda Taha, American Concrete Institute (ACI) ',
+                      'assets/images/photos/Taha.png');
                 },
                 child: Container(
                   child: Row(
@@ -174,7 +185,8 @@ class acc16Day2Session extends StatelessWidget {
                   _showMyDialog(
                       "09:30 - 10:00",
                       "Meeting Design Goals with Architectural Concrete",
-                      'By Mr. Larry Rowland, American Concrete Institute (ACI)');
+                      'By Mr. Larry Rowland, American Concrete Institute (ACI)',
+                      'assets/images/photos/Rowland.png');
                   // Navigator.push(
                   //     context,
                   //     MaterialPageRoute(
@@ -225,7 +237,8 @@ class acc16Day2Session extends StatelessWidget {
                   _showMyDialog(
                       "10:00 - 10:30 ",
                       "Towards Carbon-Neutral Civil Infrastructure with Sensors, Cyber-Physical Networks and AI",
-                      "By Prof. Banthia Nemkumar, American Concrete Institute (ACI)");
+                      "By Prof. Banthia Nemkumar, American Concrete Institute (ACI)",
+                      'assets/images/photos/Banthia.png');
                 },
                 child: Container(
                   child: Row(
@@ -269,8 +282,11 @@ class acc16Day2Session extends StatelessWidget {
               child: InkWell(
                 splashColor: Colors.white.withAlpha(30),
                 onTap: () {
-                  _showMyDialog("10:30 - 11:00", "ACI Ambassador",
-                      "By Prof. Jason Weiss, American Concrete Institute (ACI)");
+                  _showMyDialog(
+                      "10:30 - 11:00",
+                      "ACI Ambassador",
+                      "By Prof. Jason Weiss, American Concrete Institute (ACI)",
+                      'assets/images/photos/Weiss.png');
                 },
                 child: Container(
                   child: Row(
@@ -316,7 +332,8 @@ class acc16Day2Session extends StatelessWidget {
                   _showMyDialog(
                       "11:00 - 11:30",
                       "Development of the reactive silane-based surface impregnating material for preventing deterioration of reinforced concretes structures in  consideration of Thailand climate & for the contribution of structure resilience and environmental friendliness",
-                      "By Mr. Norimasa Mimura, SHO-BOND CORPORATION, JAPAN");
+                      "By Mr. Norimasa Mimura, SHO-BOND CORPORATION, JAPAN",
+                      'assets/images/photos/Mimura.png');
                 },
                 child: Container(
                   child: Row(
@@ -393,6 +410,44 @@ class acc16Day2Session extends StatelessWidget {
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 1,
                                 style: GoogleFonts.oswald(fontSize: 15)),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Text('  '),
+            Container(
+              height: 85,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  color: Colors.redAccent),
+              //color: Color(0xffCEEEF5 ),
+              child: InkWell(
+                splashColor: Colors.white.withAlpha(30),
+                onTap: () {
+                  _showMyDialog(
+                      '13:00 - 14:00',
+                      'ช่วงสาธิตผลิตภัณฑ์ (Present product)',
+                      'ACC16 Sponsors',
+                      '');
+                },
+                child: Container(
+                  child: Row(
+                    children: <Widget>[
+                      Text('       '),
+                      Image.asset('assets/images/info3.png'),
+                      Container(
+                        width: c_width,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text('        13:00 - 14:00 ',
+                                style: TextStyle(
+                                    fontStyle: FontStyle.italic, fontSize: 13)),
                             Text(
                                 '     ช่วงสาธิตผลิตภัณฑ์ (Present product from ACC16 sponsors)', //
                                 overflow: TextOverflow.ellipsis,
@@ -411,7 +466,7 @@ class acc16Day2Session extends StatelessWidget {
               height: 105,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                  color: Colors.redAccent),
+                  color: Color(0xfffff6c3)),
               //color: Color(0xffCEEEF5 ),
               child: InkWell(
                 splashColor: Colors.white.withAlpha(30),
@@ -419,7 +474,8 @@ class acc16Day2Session extends StatelessWidget {
                   _showMyDialog(
                       "13:00 - 13:20",
                       " สาเหตุและวิธีการแก้ไขปัญหาที่พบได้บ่อยในงานพื้นโรงงาน (Root cause and Solution of common problems in Industrial floor)",
-                      "By คุณปกรณ์ สุทธิวารี, บริษัท ปูนซีเมนต์นครหลวง จำกัด (มหาชน)");
+                      "By คุณปกรณ์ สุทธิวารี, บริษัท ปูนซีเมนต์นครหลวง จำกัด (มหาชน)",
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -471,7 +527,8 @@ class acc16Day2Session extends StatelessWidget {
                   _showMyDialog(
                       "13:20 - 13:40",
                       "คอนกรีตความร้อนต่ำกําลังอัดสูง 600 ksc โครงการ One Bangkok(Low-Heat High-Strength Concrete (600ksc) for One Bangkok Project)",
-                      "By คุณศักรินทร์ เหลืองกำจร, บริษัท ผลิตภัณฑ์และวัตถุก่อสร้าง จากัด");
+                      "By คุณศักรินทร์ เหลืองกำจร, บริษัท ผลิตภัณฑ์และวัตถุก่อสร้าง จากัด",
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -523,7 +580,8 @@ class acc16Day2Session extends StatelessWidget {
                   _showMyDialog(
                       '13:40 - 14:00',
                       'นวัตกรรมในงานก่อสร้างเสาเข็มเจาะและกําแพงกันดินขนาดใหญ่ (Innovation in construction of large-diameter bored pile and diaphragm wall)',
-                      'By ดร. ธยานันท์ บุณยรักษ์, บริษัท ซีฟโก้ จำกัด(มหาชน)');
+                      'By ดร. ธยานันท์ บุณยรักษ์, บริษัท ซีฟโก้ จำกัด(มหาชน)',
+                      '');
                 },
                 child: Container(
                   child: Row(
@@ -678,7 +736,6 @@ class acc16Day2Session extends StatelessWidget {
                                 MATauthors: [
                                   " จักรพงศ์ ชานประโคน, รัฐพล สมนา, เกียรติสุดา สมนา",
                                   " Aunchana Kijjanon, Taweechai Sumranwanich, Arnon Wongkaew, Thidaporn Chuosavasdi",
-                                  " Jakrin Poochamchote, Rattapon Somna, Kiatsuda Somna",
                                   " Aaquib Rasul Mazumdar, Thanakorn Pheeraphan",
                                   " Aaquib Rasul Mazumdar, Thanakorn Pheeraphan",
                                   " Mohamed Aslah Mohamed Minsar, Thanakorn Pheeraphan",
@@ -686,7 +743,7 @@ class acc16Day2Session extends StatelessWidget {
                                 MATname: [
                                   "COMPRESSIVE STRENGTH OF HOLLOW NON-LOAD-BEARING MASONRY UNIT FROM CALCIUM CARBIDE RESIDUE AND FLY ASH ACTIVATED WITH SODIUM HYDROXIDE SOLUTION",
                                   "EFFECT OF CALCINED CLAY ON CHLORIDE PENETRATION RESISTANCE AND COMPRESSIVE STRENGTH OF CONCRETE",
-                                  "Comparative study of properties of concrete made of hydraulic cement (TIS 2594) and ordinary Portland",
+                                  "Comparative study of properties of concrete made of hydraulic cement (TIS 2594) and ordinary Portland cement",
                                   "Use of Modified Andreasen Model for Low Cement Concrete of Medium Strength",
                                   "EFFECT OF POLYMER ADMIXTURES ON MECHANICAL PROPERTIES OF PREPLACED AGGREGATE CONCRETE",
                                 ],
@@ -695,7 +752,7 @@ class acc16Day2Session extends StatelessWidget {
                                   'https://drive.google.com/file/d/1GvhywlLGnq_K8NiRBdUToAl-mvM_5jZI/view?usp=sharing', //17
                                   'https://drive.google.com/file/d/1b0ACo8gryhl1Rcr0_uP0rikjoL_2Zv4q/view?usp=sharing', //18
                                   'https://drive.google.com/file/d/1m8LtffIxKtyZpGxb0EVhM24gL-ZjQ_Ye/view?usp=sharing', //19
-                                  'https://drive.google.com/file/d/1w0BZTiu6EUg9nit5wfM2HtcKt3iCg6kS/view?usp=sharing', //20
+                                  'https://drive.google.com/file/d/1QEmTtYfinJLCLkHDJZj3fEwHLHXYHgpk/view?usp=sharing', //20
                                 ],
                               )));
                 },

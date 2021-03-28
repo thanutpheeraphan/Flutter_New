@@ -12,7 +12,7 @@ class mainACC16 extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter GridView',
       home: new Home(),
-      theme: new ThemeData(primaryColor: Colors.black),
+      theme: new ThemeData(primaryColor: Color(0xffA6A6A6)),
     );
   }
 }
@@ -25,26 +25,39 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
+    String imageHolder;
+    String imageMedium = "assets/images/acc16Poster512.png";
+    int temp;
+    double cardWidth;
+    double cardHeight;
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
-    var newCard1 = new Center(
+    if (width < 600.0) {
+      imageHolder = 'assets/images/acc16Poster1024.png';
+    } else {
+      imageHolder = 'assets/images/acc16Poster512.png';
+    }
+    var newCard1 = new Container(
+      // height: cardHeight - 20,
       //has big size
       child: Card(
         elevation: 10.0,
         color: Color(0xfffff6c3), //Color(0xffFFFDB7)
         child: InkWell(
-          splashColor: Colors.blue.withAlpha(30),
+          splashColor: Colors.blueGrey.withAlpha(30),
           onTap: () {
             print('Card 1.');
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => first_route()));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // decoration:
+            //     BoxDecoration(border: Border.all(color: Colors.blueAccent)),
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
                 Image.asset('assets/images/one_2.png'),
                 Text(
                   'Program Details',
@@ -59,7 +72,7 @@ class _HomeState extends State<Home> {
       ),
     );
 
-    var newCard2 = new Center(
+    var newCard2 = new Container(
       //has big size
       child: Card(
         elevation: 10.0,
@@ -78,10 +91,10 @@ class _HomeState extends State<Home> {
             //     MaterialPageRoute(builder: (context) => welcome_msg()));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset('assets/images/two.png'),
                 Text(
@@ -96,7 +109,7 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
-    var newCard3 = new Center(
+    var newCard3 = new Container(
       //has big size
       child: Card(
         elevation: 10.0,
@@ -109,14 +122,14 @@ class _HomeState extends State<Home> {
                 context,
                 MaterialPageRoute(
                     builder: (context) => WebViewExample(
-                        "https://drive.google.com/file/d/1farElez1HLfUEQyoODEjZTHMcCsNn0Cw/view?usp=sharing",
+                        "https://drive.google.com/drive/folders/1eQOGhXOvpy5DV4EsxuIjTxKICJOtNWYl?usp=sharing",
                         "Program Overview")));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset('assets/images/three.png'),
                 Text(
@@ -131,7 +144,7 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
-    var newCard4 = new Center(
+    var newCard4 = new Container(
       //has big size
       child: Card(
         elevation: 10.0,
@@ -149,10 +162,10 @@ class _HomeState extends State<Home> {
                         "Keynote Speakers")));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset('assets/images/four.png'),
                 Text(
@@ -167,7 +180,7 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
-    var newCard5 = new Center(
+    var newCard5 = new Container(
       //has big size
       child: Card(
         elevation: 10.0,
@@ -184,10 +197,10 @@ class _HomeState extends State<Home> {
                         "Posters")));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset('assets/images/five.png'),
                 Text(
@@ -202,7 +215,7 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
-    var newCard6 = new Center(
+    var newCard6 = new Container(
       //has big size
       child: Card(
         elevation: 10.0,
@@ -216,10 +229,10 @@ class _HomeState extends State<Home> {
 //            Navigator.push(context,MaterialPageRoute(builder: (context) => third_route()));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset('assets/images/six.png'),
                 Text(
@@ -234,7 +247,7 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
-    var newCard7 = new Center(
+    var newCard7 = new Container(
       //has big size
       child: Card(
         elevation: 10.0,
@@ -252,10 +265,10 @@ class _HomeState extends State<Home> {
                         "Program Committee")));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset('assets/images/seven.png'),
                 Text(
@@ -270,7 +283,7 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
-    var newCard8 = new Center(
+    var newCard8 = new Container(
       //has big size
       child: Card(
         elevation: 10.0,
@@ -287,10 +300,10 @@ class _HomeState extends State<Home> {
                         "Brochure Information")));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset('assets/images/eight.png'),
                 Text(
@@ -305,7 +318,7 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
-    var newCard9 = new Center(
+    var newCard9 = new Container(
       //has big size
       child: Card(
         elevation: 10.0,
@@ -318,10 +331,10 @@ class _HomeState extends State<Home> {
             //     MaterialPageRoute(builder: (context) => prog_of_events()));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset('assets/images/nine.png'),
                 Text(
@@ -336,7 +349,7 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
-    var newCard10 = new Center(
+    var newCard10 = new Container(
       //has big size
       child: Card(
         elevation: 10.0,
@@ -345,15 +358,19 @@ class _HomeState extends State<Home> {
           splashColor: Colors.blue.withAlpha(30),
           onTap: () {
             print('Card 10.');
-            //Navigator.push(context,MaterialPageRoute(builder: (context) => tenth_route()));
-            // Navigator.push(
-            //     context, MaterialPageRoute(builder: (context) => pdf_view()));
+
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => WebViewExample(
+                        "https://drive.google.com/drive/folders/1A2ydgFFJJjIZaGptNB0xXThickRqANGQ?usp=sharing",
+                        "Sponsors")));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset('assets/images/ten.png'),
                 Text(
@@ -368,7 +385,7 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
-    var newCard11 = new Center(
+    var newCard11 = new Container(
       //has big size
       child: Card(
         elevation: 10.0,
@@ -377,14 +394,18 @@ class _HomeState extends State<Home> {
           splashColor: Colors.blue.withAlpha(30),
           onTap: () {
             print('Card 11.');
-            // Navigator.push(context,
-            // MaterialPageRoute(builder: (context) => online_conf()));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => WebViewExample(
+                        "https://drive.google.com/drive/folders/19c2-r7T5gT-vrXkquMuEX-hHUeTMBzgT?usp=sharing",
+                        "Proceeding")));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset('assets/images/eleven.png'),
                 Text(
@@ -399,7 +420,7 @@ class _HomeState extends State<Home> {
         ),
       ),
     );
-    var newCard12 = new Center(
+    var newCard12 = new Container(
       //has big size
       child: Card(
         elevation: 10.0,
@@ -412,10 +433,10 @@ class _HomeState extends State<Home> {
             //     context, MaterialPageRoute(builder: (context) => news()));
           },
           child: Container(
-            width: 133,
-            height: 100,
+            // width: cardWidth,
+            // height: cardHeight,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset('assets/images/twelve.png'),
                 Text(
@@ -436,9 +457,9 @@ class _HomeState extends State<Home> {
     var newGridView2 = new GridView(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
-          childAspectRatio: 1.5,
-          mainAxisSpacing: 1.0,
-          crossAxisSpacing: 0.0,
+          // childAspectRatio: 1.5,
+          // mainAxisSpacing: 1.0,
+          // crossAxisSpacing: 0.0,
         ),
         children: <Widget>[
           newCard1,
@@ -458,20 +479,73 @@ class _HomeState extends State<Home> {
           // newCard12
         ]);
 
-    return new Container(
-      padding: paddingScreen,
-      height: newHeight,
-      width: (MediaQuery.of(context).size.width),
-      color: Color(
-          0xfff4f5f6), //official color from poster color: Color(0xff0190D6)
-
-      child: new Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget>[
-          Image.asset('assets/images/acc16Poster.png'),
-          Flexible(child: newGridView2)
-        ],
-      ),
+    // return MaterialApp(
+    //   home: Scaffold(
+    //     body: SafeArea(
+    //       child: SingleChildScrollView(
+    //         child: Container(
+    //           height: newHeight,
+    //           child: Column(
+    //             children: [
+    //               Image.asset(imageHolder),
+    //               Text(""),
+    //               Text(""),
+    //               Expanded(child: newGridView2)
+    //             ],
+    //           ),
+    //         ),
+    //       ),
+    //     ),
+    //   ),
+    // );
+    return Scaffold(
+      body: OrientationBuilder(
+          builder: (BuildContext context, Orientation orientation) {
+        return Center(
+          child: Container(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                Text(""),
+                Text(""),
+                Image.asset(
+                  orientation == Orientation.landscape
+                      ? imageMedium
+                      : imageHolder,
+                ),
+                Expanded(
+                  child: new GridView(
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount:
+                            orientation == Orientation.landscape ? 9 : 3,
+                        childAspectRatio:
+                            orientation == Orientation.landscape ? 0.8 : 1.5,
+                        // mainAxisSpacing: 1.0,
+                        // crossAxisSpacing: 0.0,
+                      ),
+                      children: <Widget>[
+                        newCard1,
+                        newCard2,
+                        newCard3,
+                        newCard4,
+                        newCard5,
+                        // newCard6,
+                        newCard10,
+                        newCard7,
+                        newCard8,
+                        // newCard9,
+                        newCard11
+                        // ,
+                        // newCard10,
+                        // newCard11,
+                        // newCard12
+                      ]),
+                )
+              ],
+            ),
+          ),
+        );
+      }),
     );
   }
 }
@@ -482,3 +556,6 @@ class _HomeState extends State<Home> {
 // //Flexible(child:newGridView2)
 //   runApp(new MyApp());
 // }
+
+//orientation == Orientation.landscape ? 9 : 3,
+//working

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app2/ACC16Files/Posters.dart';
 import 'package:flutter_app2/ACC16Files/testWebView.dart';
 import 'package:flutter_app2/ScientificProgram1/first_route.dart';
 import 'package:flutter_app2/Venus_Plans6/zoom.dart';
@@ -190,11 +191,13 @@ class _HomeState extends State<Home> {
           onTap: () {
             print('Card 5.');
             Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => WebViewExample(
-                        "https://drive.google.com/file/d/1yGGY64-E4swoVkF6k1Fne0yg4WuaaTuT/view?usp=sharing",
-                        "Posters")));
+                context, MaterialPageRoute(builder: (context) => Posters()));
+            // Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (context) => WebViewExample(
+            //             "https://drive.google.com/file/d/1yGGY64-E4swoVkF6k1Fne0yg4WuaaTuT/view?usp=sharing",
+            //             "Posters")));
           },
           child: Container(
             // width: cardWidth,

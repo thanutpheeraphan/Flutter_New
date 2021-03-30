@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app2/ACC16Files/testWebView.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'MATs/MATDayReusable.dart';
@@ -9,7 +10,8 @@ class acc16Day1Session extends StatelessWidget {
   Widget build(BuildContext context) {
     double c_width = MediaQuery.of(context).size.width * 0.8;
     Future<void> _showMyDialog(
-        String time, String name, String author, String image) async {
+        String time, String name, String author, String image,
+        {String file = ""}) async {
       // if (image == '') {
       //   image = 'assets/images/photos/person.png';  //removed all placeholders
       // }
@@ -34,16 +36,42 @@ class acc16Day1Session extends StatelessWidget {
                           TextStyle(fontSize: 13, fontStyle: FontStyle.italic)),
                   Text(" "),
                   ClipOval(
-                    child: Image.asset(
-                      image,
-                      // height: 50,
-                      fit: BoxFit.cover,
-                    ),
+                    child: (image == '')
+                        ? Text('')
+                        : Image.asset(
+                            image,
+                            // height: 50,
+                            fit: BoxFit.cover,
+                          ),
                   ),
                 ],
               ),
             ),
             actions: <Widget>[
+              Container(
+                child: (file == '')
+                    ? Text('')
+                    : IconButton(
+                        icon: Icon(Icons.insert_drive_file),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => WebViewExample(
+                                      (file), "Speakers Presentation File")));
+                        },
+                      ),
+              ),
+              // IconButton(
+              //   icon: Icon(Icons.insert_drive_file),
+              //   onPressed: () {},
+              // ),
+              // TextButton(
+              //   child: (image == '') ? Text('No Image') : Text('Have Image'),
+              //   onPressed: () {
+              //     Navigator.of(context).pop();
+              //   },
+              // ),
               TextButton(
                 child: Text('OK'),
                 onPressed: () {
@@ -231,7 +259,7 @@ class acc16Day1Session extends StatelessWidget {
                 onTap: () {
                   _showMyDialog(
                       '09:45 - 10:15',
-                      'ICCC 1',
+                      '"The Future of Concrete"',
                       'By Prof. Karen Scrivener, International Congress on the Chemistry of Cement',
                       'assets/images/photos/Karen.jpg');
                 },
@@ -249,7 +277,7 @@ class acc16Day1Session extends StatelessWidget {
                             Text('        09:45 - 10:15 ',
                                 style: TextStyle(
                                     fontStyle: FontStyle.italic, fontSize: 13)),
-                            Text('     ICCC 1',
+                            Text('     "The Future of Concrete"',
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 1,
                                 style: GoogleFonts.oswald(fontSize: 15)),
@@ -278,9 +306,11 @@ class acc16Day1Session extends StatelessWidget {
                 onTap: () {
                   _showMyDialog(
                       '10:15 - 10:45',
-                      ' ACI Ambassador',
+                      '  "The Role of Next-Generation Admixtures and Concrete Control Systems in the Development of More Sustainable Concrete"',
                       'By Mr. G. Terry Harris, American Concrete Institute (ACI)',
-                      'assets/images/photos/Harris.png');
+                      'assets/images/photos/Harris.png',
+                      file:
+                          "https://drive.google.com/file/d/1rqOHCsYhorTeF8_L812HZdP6s9H5iKlH/view?usp=sharing");
                 },
                 child: Container(
                   child: Row(
@@ -296,7 +326,8 @@ class acc16Day1Session extends StatelessWidget {
                             Text('        10:15 - 10:45 ',
                                 style: TextStyle(
                                     fontStyle: FontStyle.italic, fontSize: 13)),
-                            Text('     ACI Ambassador',
+                            Text(
+                                '      "The Role of Next-Generation Admixtures and Concrete Control Systems in the Development of More Sustainable Concrete"',
                                 overflow: TextOverflow.ellipsis,
                                 maxLines: 1,
                                 style: GoogleFonts.oswald(fontSize: 15)),
